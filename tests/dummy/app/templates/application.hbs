@@ -1,3 +1,81 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h1 id="title">ui-checkbox-input</h1>
+<h2>HTML <b>Checkbox</b> input that is Bootstrap and CSS friendly</h2>
 
-{{outlet}}
+
+<h3>Tests</h3>
+
+<h4>Standard Checkboxes</h4>
+
+<div class="fluid-container">
+	<div class="row">
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			{{ui-checkbox-input size="small"}}
+		</div>
+		<div class="col-xs-8">
+			small<br/>
+			<code>
+\{{ui-checkbox-input size="small"}}
+			</code>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			{{ui-checkbox-input}}
+		</div>
+		<div class="col-xs-8">
+			default<br/>
+			<code>
+\{{ui-checkbox-input}}
+			</code>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			{{ui-checkbox-input size="large"}}
+		</div>
+		<div class="col-xs-8">
+			large<br/>
+			<code>
+\{{ui-checkbox-input size="large"}}
+			</code>
+		</div>
+	</div>
+</div>
+
+<h4>Checkbox Edge Cases</h4>
+
+<div class="fluid-container">
+	<div class="row">
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			{{ui-checkbox-input disabled=true}}
+		</div>
+		<div class="col-xs-8">
+			disabled<br/>
+			<code>
+\{{ui-checkbox-input disabled=true}}
+			</code>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			{{ui-checkbox-input checkmark="block"}}
+		</div>
+		<div class="col-xs-8">
+			checkmark is "block"<br/>
+			<code>
+\{{ui-checkbox-input checkmark="block"}}
+			</code>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-3 col-md-2">
+			{{ui-checkbox-input tabStop=false}}
+		</div>
+		<div class="col-xs-8">
+			Enabled but not tabstop<br/>
+			<code>
+\{{ui-checkbox-input tabStop=false}}
+			</code>
+		</div>
+	</div>
+</div>
